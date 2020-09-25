@@ -2,13 +2,14 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 header {
   position: fixed;
+  height: 100%;
 }
 
 /* Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 #sidebar {
-  height: 100vh;
+  height: 100%;
   width: 46px;
   z-index: 9;
   border-right: 1px solid black;
@@ -23,6 +24,7 @@ header {
   text-align: center;
   font-family: "Archivo", sans-serif;
   font-weight: 700;
+  justify-self: flex-end;
 }
 
 .nav {
@@ -56,6 +58,12 @@ header {
   color: black;
   display: block;
   transition: 0.3s;
+}
+
+@media (min-width: 768px) {
+  .nav a {
+    font-size: 4em;
+  }
 }
 
 .nav a:hover,
