@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <title>Artist</title>
+  </head>
+  <body>
+    <header>
+      <div id="sidebar">
+        <div class="toggle-menu">
+          <label for="Toggle Menu" id="toggle-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <a class="header-logo" href="index.html">
+          <span>A</span>
+          <span>N</span>
+        </a>
+      </div>
+      <div id="nav" class="nav">
+        <div class="nav-content">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="work.html">Work</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="main-content fade-in">
+        <h1 class="page-title">Contact</h1>
+        <p class="page-intro">Fill in the form below.</p>
+        <form class="contact-form" action="#">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            aria-label="Name"
+            placeholder="Name"
+          />
+          <input
+            type="email"
+            id="mail"
+            name="email"
+            aria-label="Email"
+            placeholder="Email"
+          />
+          <textarea
+            id="msg"
+            name="message"
+            aria-label="Message"
+            placeholder="Message"
+          ></textarea>
+          <button class="submit-btn" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="js/nav.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
